@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do-list App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+        <h1>To-Do-List</h1>
+        </header>
+        <main>
+            <div class="inputContainer">
+                <input type="text" id="taskInput" placeholder="Add a new task">
+                <button id="addButton">Add Task</button>
+            </div>
+            <ul id="taskList">
+
+            </ul>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+<!-- inner html code in script.js -->
+<!-- listItem.innerHTML = `                                    sets inner html for nwely created list 
+    <span>${taskValue}</span>                             wraps the text inside a span element 
+    <div>
+    <button class="completeButton">Complete</button>      button to mark the task as completed 
+    <button class="deleteButton">Delete</button>          button to delete the task 
+    </div>
+    `; -->
