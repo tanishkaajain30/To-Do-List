@@ -38,3 +38,11 @@ taskList.addEventListener("click", (e) => {               /* click event is hand
         taskItem.remove();                                      /* removes task item from the list */ 
     }
 });
+
+const clearAllButton = document.getElementById("clearAll");
+
+clearAllButton.addEventListener("click", () => {
+    if (confirm("Are you sure you want to clear all tasks?")) {  // Optional confirmation
+        taskList.innerHTML = "";    // Clears all tasks
+    }
+});
