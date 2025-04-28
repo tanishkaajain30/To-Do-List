@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <label class="theme-switch">
+        <input type="checkbox" id="themeToggle">
+        <span class="slider"></span> Dark Mode
+    </label>
+
     <div class="container">
         <header>
         <h1>To-Do-List</h1>
@@ -16,22 +21,10 @@
                 <input type="text" id="taskInput" placeholder="Add a new task">
                 <button id="addButton">Add Task</button>
             </div>
-            <ul id="taskList">
-
-            </ul>
+            <ul id="taskList"></ul>
+            <button id="clearAll">Clear All</button>
         </main>
     </div>
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-<!-- inner html code in script.js -->
-<!-- listItem.innerHTML = `                                    sets inner html for nwely created list 
-    <span>${taskValue}</span>                             wraps the text inside a span element 
-    <div>
-    <button class="completeButton">Complete</button>      button to mark the task as completed 
-    <button class="deleteButton">Delete</button>          button to delete the task 
-    </div>
-    `; -->
